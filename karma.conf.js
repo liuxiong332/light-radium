@@ -27,7 +27,7 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     colors: true,
     autoWatch: false,
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
     reporters: ['mocha', 'coverage'],
     browserNoActivityTimeout: 60000,
     plugins: [
@@ -35,6 +35,7 @@ module.exports = function (config) {
       'karma-mocha',
       'karma-mocha-reporter',
       'karma-phantomjs-launcher',
+      'karma-chrome-launcher',
       'karma-sinon-chai',
       'karma-webpack'
     ],
